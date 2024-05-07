@@ -33,12 +33,6 @@ if (numb !== 5) {
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
-/* ESERCIZIO 4
-  Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
-*/
-
 /* SCRIVI QUI LA TUA RISPOSTA:
 const numb1 = 14;
 risultato = numb1 % 5;
@@ -46,6 +40,19 @@ if (risultato === 0) {
   console.log("Il numero inserito è divisibile per 5");
 } else {
   console.log("Il numero inserito non è divisibile per 5. MI DISPIACE");
+} */
+
+/* ESERCIZIO 4
+  Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
+*/
+
+/* SCRIVI QUI LA TUA RISPOSTA:
+const num1 = 7;
+const num2 = 2;
+if ((num1, num2 === 8 || num1 + num2 === 8 || num1 - num2 === 8)) {
+  console.log("Uno dei numeri o la loro somma/sottrazione è uguale a 8.");
+} else {
+  console.log("Nessuna condizione corrisponde.");
 }
  */
 
@@ -103,7 +110,7 @@ if (totalShoppingCart > 50) {
   Alla fine mostra il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA:
+/* SCRIVI QUI LA TUA RISPOSTA: risopsta sbagliata perché non dovevo usare un array.
 const numb1 = 10;
 const numb2 = 15;
 const numb3 = 5;
@@ -113,11 +120,48 @@ console.log("Ordine sparso dei numeri: ", numb1, numb2, numb3);
 numbs = numbs.sort();
 console.log("Ecco i numeri in ordine crescente.", numbs); */
 
+/* Svolgimento es. 7:
+ 
+const numb1 = 10;
+const numb2 = 15;
+const numb3 = 5;
+
+if (numb1 > numb2 && numb1 > numb3) {
+  let first = numb1;
+  console.log("Primo", first);
+  if (numb2 > numb3) {
+    let second = numb2;
+    let third = numb3;
+    console.log("Secondo", second);
+    console.log("Terzo", third);
+  } else {
+    console.log("Secondo", third);
+    console.log("Terzo", second);
+  }
+} else if (numb2 > numb1 && numb2 > numb3) {
+  let first = numb2;
+  console.log("Primo", first);
+  if (numb1 > numb3) {
+    console.log("Secondo", numb1);
+    console.log("Terzo", numb3);
+  } else {
+    console.log("Secondo", numb3);
+    console.log("Terzo", numb1);
+  }
+} else {
+  console.log("Primo", numb3);
+  console.log("Secondo", numb2);
+  console.log("Terzo", numb1);
+}
+*/
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA:
+const indovinello = 1;
+console.log(typeof indovinello); */
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -212,10 +256,18 @@ console.log(me.skills);
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA:
+let array = [];
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; */
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA:
+let array = [];
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+array.pop();
+array[9] = 100;
+console.log("Sostituisci con il valore ", array[9]);
+ */
