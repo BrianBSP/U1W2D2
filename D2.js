@@ -102,10 +102,16 @@ if (totalShoppingCart > 50) {
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
-const numb1 = 5;
-const numb2 = 10;
-const numb3 = 15;
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+/* SCRIVI QUI LA TUA RISPOSTA:
+const numb1 = 10;
+const numb2 = 15;
+const numb3 = 5;
+
+const numbs = [numb1, numb2, numb3];
+console.log("Ordine sparso dei numeri: ", numb1, numb2, numb3);
+numbs = numbs.sort();
+console.log("Ecco i numeri in ordine crescente.", numbs); */
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -117,7 +123,16 @@ const numb3 = 15;
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA:
+const numb1 = 4;
+let risultato = numb1 % 2;
+
+if (risultato === 0) {
+  console.log("Il numero è pari.");
+} else {
+  console.log("Il numero è dispari.");
+}
+ */
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -131,7 +146,15 @@ const numb3 = 15;
     }
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA:
+let val = 10;
+if (val >= 10) {
+  console.log("Uguale a 10 o maggiore");
+} else if (val > 5) {
+  console.log("Meno di 10");
+} else {
+  console.log("Meno di 5");
+} */
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -143,19 +166,47 @@ const me = {
   skills: ["javascript", "html", "css"],
 };
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA:
+const me = {
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+  city: "Toronto",
+};
+
+*/
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA
+const me = {
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+  city: "Toronto",
+};
+delete me.lastName;
+console.log(me.lastName);
+ */
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA 
+const me = {
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+  city: "Toronto",
+};
+delete me.lastName;
+console.log(me.lastName);
+delete me.skills;
+console.log(me.skills);
+*/
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
